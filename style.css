@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    height: 10vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.35));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#bottom {
+    height: 10vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.35));
+    background-size: cover;
+    background-position: center;
+    visibility: hidden;
+    position: relative;
+}
+
+.bidding {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rebeccapurple;
+}
+
+.bidding_role {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.select {
+    padding: 20px;
+    border-bottom: 1px solid white;
+    background-color: whitesmoke;
+}
+
+.add_container {
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.role {
+    width: 150px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 20px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
+
+.select_request {
+    width: 150px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 20px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
+.add_btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.add_name {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.tbody {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .tbody td, .tbody th {
+    border: 2px solid #ddd;
+    padding: 8px;
+  }
+  
+  .tbody tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .tbody tr:hover {background-color: #ddd;}
+  
+  .tbody th {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  button{
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    text-align: center;
+    background-color: #5499C7;
+    font-size: 15px;
+    color: #ffffff;
+    }
+  input{
+    height: 35px;
+    font-size: 15px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+th {
+    background-color: #5499C7;
+    color: white;
+    font-style: bold;
+    font-size: 20px;
+}

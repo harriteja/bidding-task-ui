@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Bidding Project</title>
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="bidding">
+            <div class="bidding_role">
+                Please Select your role Bid Creator or Bidder
+            </div>
+        </div>
+    </div>
+
+    <div class="selector">
+        <div class="select">
+            <div class="add_container">
+                <select class="role">
+                    <option value="bid_creator">Bid Creator</option>
+                    <option value="bidder">Bidder</option>
+                </select>
+                <select class="select_request">
+                    <option value="create">Create</option>
+                    <option value="get_all" selected>Get</option>
+                </select>
+                <input type="text" class="add_name" placeholder="Add Your Name">
+                <button class="add_btn"><i class="ion-ios-checkmark-outline"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 10px; margin-left: 250px; margin-right: 250px;">
+        <div id="tableDiv" style="margin-top: 20px"></div>
+        <div id="tableDivItem" style="margin-top: 80px"></div>
+        <div id="tableReponse" style="margin-top: 120px"></div>
+    </div>
+
+    <div id='createBid', style="display:none;">
+        <form>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="start_date" placeholder="StartDate">
+            <input type="text" id="end_date" placeholder="EndDate">
+        </form>
+        <form>
+            <input type="text" id="item" placeholder="Item">
+            <input type="text" id="quantity" placeholder="Quantity">
+            <input type="text" id="description" placeholder="Description">
+            <input type="button" class="add-row" value="Add Row">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button type="button" class="save">Save</button>
+    </div>
+
+    <p id="demo"></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
