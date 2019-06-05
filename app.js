@@ -80,11 +80,8 @@ var controller = (function (uiCtrl) {
             var h = controller.getAll();
             var p = [];
             var k = '<table border="1" id="example"><thead><tr><th>Bid Id</th><th>Title</th><th>Start Date</th><th>End Date</th><th>Expired</th></thead>';
-            var k_table = '<table border="1" id="example"><thead><tr><th>Title</th><th>Start Date</th><th>End Date</th></thead>' +
-                '<tbody><tr><td></td><td></td><td></td></tr></tbody>';
             var biditem = '<table border="1" id="example"><tr><th>Bid Item Id</th><th>Bid Id</th><th>Item</th><th>Quantity</th>' +
                 '<th>Description</th></thead>';
-            var bid_table = '<table border="1" id="example"><tr><th>Item</th><th>Quantity</th><th>Description</th><tbody><tr><td></td><td></td><td></td></tr></tbody>';
             var response = '<table border="1" id="example"><tr><th>Bid Item Id</th><th>Rank</th><th>Name</th><th>Quantity</th>' +
                 '<th>Amount</th><th>isAccepted</th></thead>';
             h.then(function (result) {
@@ -180,11 +177,8 @@ var controller = (function (uiCtrl) {
                 var h = controller.getAllBidsByName(input.name);
                 var p = [];
                 var k = '<table border="1" id="example"><thead><tr><th>Bid Id</th><th>Title</th><th>Start Date</th><th>End Date</th><th>Expired</th></thead>';
-                var k_table = '<table border="1" id="example"><thead><tr><th>Title</th><th>Start Date</th><th>End Date</th></thead>' +
-                    '<tbody><tr><td></td><td></td><td></td></tr></tbody>';
                 var biditem = '<table border="1" id="example"><tr><th>Bid Item Id</th><th>Bid Id</th><th>Item</th><th>Quantity</th>' +
                     '<th>Description</th></thead>';
-                var bid_table = '<table border="1" id="example"><tr><th>Item</th><th>Quantity</th><th>Description</th><tbody><tr><td></td><td></td><td></td></tr></tbody>';
                 var response = '<table border="1" id="example"><tr><th>Bid Item Id</th><th>Rank</th><th>Name</th><th>Quantity</th>' +
                     '<th>Amount</th><th>isAccepted</th></thead>';
                 h.then(function (result) {
